@@ -26,11 +26,11 @@ h1 {
 h2 {
   font-size: 65px;
   color: #070300;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.1rem;
 }
 
 p {
-  font-size: 20px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: calc(38 / 20);
 }
@@ -94,6 +94,88 @@ header {
 .top_content_img img {
   transition: transform 0.8s ease-in-out;
 }
+
 .top_content_img img:hover {
   transform: rotate(180deg);
+}
+
+.content_box {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_box p {
+  text-align: center;
+}
+
+.white_content_box {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFEFD;
+}
+
+.info_contents {
+  max-width: 86vw;
+}
+
+.my_info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 13%;
+}
+
+.my_img {
+  width: 30%;
+}
+
+.my_introduction {
+  margin: 30px 0 0 25px;
+  text-align: left;
+  inline-size: 70%;
+  overflow-wrap: break-word;
+}
+
+.sns_icons {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 36.2%;
+}
+
+.twitter_icon, 
+.qiita_icon,
+.github_icon {
+  display: inline-block;
+  margin-right: 27px;
+}
+
+.fixed_contents {
+  width: 85vw;
+  height: 80vh;
+}
+
+.first_contents {
+  margin-top: 67px;
+  height: 70%;
+}
+
+.lower_row {
+  margin-top: 37px;
+}
+
+.content_lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc((100% - 37px) / 2);
+}
+
+.content_list {
+  width: calc((100% - (37px * 2)) / 3);
+  height: 100%;
+  background-color: #FFFEFD;
 }
