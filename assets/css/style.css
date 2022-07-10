@@ -272,6 +272,10 @@ textarea:focus, input:focus{
   font-weight: bold;
 }
 
+#submit_button:hover {
+  opacity: 0.9;
+}
+
 .sentence_form::placeholder { 
   position: relative;
   top: 1.5em;
