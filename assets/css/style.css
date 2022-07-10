@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
 /* ここからタグ */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-size: cover;
@@ -53,13 +56,44 @@ header {
   position: relative; 
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 7%;
+  height: 100%;
+}
+
+.header_nav_columns {
+  height: 100%;
+  padding-top: 2px;
+}
+
+.header_nav_columns_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.column {
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.column:hover {
+  background: #F0D7C5;
+  transition-duration: 0.5s;
+}
+
+.column:nth-child(-n+4) {
+  padding: 0 8.5px;
+}
+
 .header_nav_var nav {
   box-shadow: none;
   
-}
-
-.header_nav_bar_content {
-
 }
 
 .top_content {
@@ -93,11 +127,11 @@ header {
 }
 
 .top_content_img img {
-  transition: transform 0.8s ease-in-out;
+  /* transition: transform 0.8s ease-in-out; */
 }
 
 .top_content_img img:hover {
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
 }
 
 .content_box {
@@ -178,6 +212,10 @@ header {
 }
 
 .content_list {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: calc((100% - (37px * 2)) / 3);
   height: 100%;
   background-color: #FFFEFD;
@@ -190,7 +228,8 @@ header {
 }
 
 .contact_contents {
-  width: 55vw;
+  width: 50vw;
+  margin-bottom: 60px;
 }
 
 .form_area {
@@ -222,13 +261,15 @@ textarea:focus, input:focus{
 
 #submit_button {
   display: inline-block;
-  margin-top: 48px;
-  background: #FFFCFA;
+  margin-top: 54px;
+  background: #F0D7C5;
   color: #070300;
   border: 1px solid #F0D7C5;
   width: 280px;
   height: 54px;
   cursor: pointer;
+  color: #FFFEFD;
+  font-weight: bold;
 }
 
 .sentence_form::placeholder { 

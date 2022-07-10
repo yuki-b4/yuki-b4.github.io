@@ -8,6 +8,7 @@
   <title>yuki-b4 Portfolio</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/application.js"></script>
 </head>
 
 <body>
@@ -15,15 +16,31 @@
   <header>
     <div class="header_nav_bar">
       <nav>
-        <div class="header_nav_bar_content">
-          aaaa
+        <div class="header_nav_bar_icon">
+          <a href="https://yuki-b4.github.io./"><img src="assets/images/header_icon.svg" alt="img"></a>
+        </div>
+        <div class="header_nav_columns">
+          <ul class="header_nav_columns_header">
+            <li class="header_nav_columns_header column" id="navbar_home" onclick="scrollWindow(this.id)">
+              HOME
+            </li>
+            <li class="header_nav_columns_header column" id="navbar_about" onclick="scrollWindow(this.id)">
+              ABOUT
+            </li>
+            <li class="header_nav_columns_header column" id="navbar_works" onclick="scrollWindow(this.id)">
+              WORKS
+            </li>
+            <li class="header_nav_columns_header column" id="navbar_contact" onclick="scrollWindow(this.id)">
+              CONTACT
+            </li>
+          </ul>
         </div>
       </nav>
     </div>
   </header>
   <!-- ヘッダー -->
   <!-- ファーストヴィジュアル -->
-  <div class="top_content">
+  <div class="top_content" id="home">
     <div class="top_content_box">
       <h1 class="top_content_title">Yuki-b4</h1>
       <div class="top_content_sub_title">
@@ -36,7 +53,7 @@
   </div>
 
   <!-- ABOUT -->
-  <div class="content_box">
+  <div class="content_box" id="about">
     <div class="top_content_box">
       <h2>
         About this page
@@ -51,7 +68,7 @@
   </div>
 
   <!-- ME? -->
-  <div class="white_content_box">
+  <div class="white_content_box" id="me">
     <div class="info_contents">
       <h2>
         Me?
@@ -78,7 +95,7 @@
   </div>
 
   <!-- Works -->
-  <div class="content_box">
+  <div class="content_box" id="works">
     <div class="fixed_contents">
       <h2>
         Works
@@ -87,24 +104,24 @@
       <div class="first_contents">
         <div class="upper_row content_lists">
           <div class="upper_first content_list">
-
+            coming soon...
           </div>
           <div class="upper_second content_list">
-
+            coming soon...
           </div>
           <div class="upper_third content_list">
-
+            coming soon...
           </div>
         </div>
         <div class="lower_row content_lists">
           <div class="lower_first content_list">
-
+            coming soon...
           </div>
           <div class="lower_second content_list">
-
+            coming soon...
           </div>
           <div class="lower_third content_list">
-
+            coming soon...
           </div>
         </div>
       </div>
@@ -112,7 +129,7 @@
   </div>
 
   <!-- Contact -->
-  <div class="white_content_box">
+  <div class="white_content_box" id="contact">
     <div class="contact_contents">
       <h2>
         Contact
