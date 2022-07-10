@@ -111,16 +111,26 @@
     </div>
   </div>
 
-  <!-- Career -->
+  <!-- Contact -->
   <div class="white_content_box">
-    <div class="top_content_box">
+    <div class="contact_contents">
       <h2>
-        Career
+        Contact
       </h2>
-      <p>
-        エンジニアYukiのポートフォリオです。<br>
-        これまで制作・実装したものをまとめています。
-      </p>
+      <div class="form_area">
+        <form
+          action="https://formspree.io/f/xdobrlqa"
+          method="POST"
+        >
+          <input name="name" placeholder="Name" class="text_form" required>
+          <input type="email" name="email" placeholder="Email" class="text_form" required>
+          <textarea name="message" class="sentence_form" placeholder="Message" required></textarea>
+          <!-- your other form fields go here -->
+          <div class="submit_area">
+            <button type="submit" id="submit_button">Send</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </body>
